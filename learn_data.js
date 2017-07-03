@@ -58,7 +58,7 @@ const bmi_network = new Network({
   console.log("| - Obesity:", n[1]);
 }
 
-//return the bigget number in an array
+//return the bigget element number in n of array
 function argmax(n) {
   let v = Number.MIN_VALUE;
   let index = -1;
