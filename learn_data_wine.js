@@ -6,8 +6,8 @@ const Trainer = synaptic.Trainer;
 
 //create each Layer
 const inputLayer = new Layer(13);    //13 conditions like phenol, malic acid, alcohol, etc... 
-const hiddenLayer = new Layer(110);
-const outputLayer = new Layer(3);    //rating wine by 3 level
+const hiddenLayer = new Layer(110);  //this number can be anything
+const outputLayer = new Layer(3);    //rating wine by 3 grade
 
 //connect Layer and build the neural network
 inputLayer.project(hiddenLayer);
