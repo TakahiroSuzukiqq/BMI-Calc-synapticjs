@@ -1,3 +1,18 @@
+0. Installation  
+````  
+【 JSON package 】
+"node-svm": "^2.1.8",  
+"synaptic": "^1.0.12"
+=======================  
+【 Command line 】
+$ npm init  
+$ npm install synaptic --save *1 
+$ npm install node-svm --save *2  
+````  
+  
+  *1 To install these packages, you need to have python in your local.  
+  *2 To install node-svm you need to use python2, not python3.  
+    
 1. Synaptic.js - BMI  
   
 2. Synaptic.js - Wine  
