@@ -9,6 +9,7 @@
   "author": "taka",
   "license": "ISC",
   "dependencies": {
+    "node-svm": "^2.1.8",
     "synaptic": "^1.0.12"
   }
 }

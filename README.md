@@ -1,6 +1,6 @@
-1. BMI  
+1. Synaptic.js - BMI  
   
-2. Wine    
+2. Synaptic.js - Wine  
   The machine can guess the rating of wine correctly with ○○%  
   Data is selected at rondom.   
   
@@ -24,5 +24,7 @@
     - Once the precition is correct, the machine counts its number.  
     - Command line $ node make_data_wine.js  
                    $ node learn_data_wine.js  
-
+  
+3. Node-SVM - Wine  
+   Node-SVM(Support vector machines) are supervised learning models that analyze data and recognize patterns.  
      
