@@ -14,23 +14,25 @@
   *2 To install node-svm you need to use python2, not python3.  
 
 
-# 1. Synaptic.js - BMI  
+# 1. Synaptic -- Synaptic-BMI  
   The machine judges the test data that whether the data are "obesity" or "standard". The judgement is based on the knowledge which is coming from training with numerous number of the data.  
     
   * Generate the sample dummy data by coding.  
   * Setup 2 labels, "Obesity[0,1]", "Standard[1,0]".  
   * Training the machine with the dummy data so that it can recognize and judge the data.  
   * Give th machine some sample data and test whether it can judge each of the data.  
-  * How to play ?  
-    - $ node create_data.js   <= To generate the random height, weight and [0,1], [1,0] data and store into bmi.json file.  
-    - $ node learn_data.js    <= To train and test the machine by using generated data.
-    
+  * Generating the data, training and testing it.  
+    ````  
+    - $ node create_data.js     <= To generate the random height, weight and [0,1], [1,0] data and store into bmi.json file.  
+    - $ node learn_data.js      <= To train and test the machine by using generated data.  
+    ````  
+       
   * App image  
     <a href="https://ibb.co/jrrpUa"><img src="https://preview.ibb.co/bGb1aF/bmi1.png" alt="bmi1" border="0"></a>  
     <a href="https://ibb.co/gwTshv"><img src="https://preview.ibb.co/mxOQ2v/bmi2.png" alt="bmi2" border="0"></a>  
     
    
-# 2. Synaptic.js - Wine  
+# 2. Synaptic -- Synaptic-Wine  
   The machine can guess the rating of wine.  
   In this app, the machine uses the data from wine.csv file. In the file there are descriptions about wine such ad wine grade(good: 1 - bad: 3), alcohol or malic acid. With these data the machine learn the connection between wine grade and their components by using neural network methodology. As a test, the machine predict wine grade from its component.  
   The machine pick the data at random and test, then retun the accuracy rate.  
@@ -52,15 +54,18 @@
     Training by using the train method and testing as follows.  
     - Calling the activate method of wine_network which I built anables to predict the data.  
     - Once the precition is correct, the machine counts its number.  
-    - Command line $ node make_data_wine.js  
-                   $ node learn_data_wine.js  
-    
+    - Training and testing  
+    ````  
+    $ node make_data_wine.js  
+    $ node learn_data_wine.js  
+    ````  
+
   * App image  
     <a href="https://ibb.co/iaeZUa"><img src="https://preview.ibb.co/mZrRaF/winea1.png" alt="winea1" border="0"></a>  
     <a href="https://ibb.co/eTwsFF"><img src="https://preview.ibb.co/dvLKvF/winea2.png" alt="winea2" border="0"></a>  
         
           
-# 3. Node-SVM - Wine  
+# 3. Node-SVM -- Node-SVM-Wine  
    Node-SVM(Support vector machines) are supervised learning models that analyze data and recognize patterns.  
    Using SVM algorithm and answer wine grade. The machine compile the data and learn the pattern by using pattern recognition.  
   
@@ -72,9 +77,11 @@
      var clf = new svm.CSVC();  
      ````  
    * Training and testing  
+      ````  
       $ node make_data_wine_svm.js  
       $ node learn_data_wine_svm.js  
-    
+      ````  
+            
    * App image  
      <a href="https://ibb.co/etYxFF"><img src="https://preview.ibb.co/fR8WaF/wineb3.png" alt="wineb3" border="0"></a>
 
