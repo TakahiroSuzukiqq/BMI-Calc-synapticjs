@@ -40,7 +40,7 @@
   * Data preparation  
     Using CSV data from web page and convert this file into JSON format.
   * Normalization  
-    There are a lot of variation in each value of components so normalize to arrange each deature of the data scope between 0 - 1.  
+    There are a lot of variation in each value of components, so normalize the data within the scope of 0 - 1.  
   * Calculate Standard Normal Distribution by (value - minvalue) / (maxvalue - minvalue).  
   
   * Express 3 grades as bellow.  
