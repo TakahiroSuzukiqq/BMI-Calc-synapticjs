@@ -23,8 +23,8 @@
   * Give th machine some sample data and test whether it can judge each of the data.  
   * Generating the data, training and testing it.  
     ````  
-    - $ node create_data.js     <= To generate the random height, weight and [0,1], [1,0] data and store into bmi.json file.  
-    - $ node learn_data.js      <= To train and test the machine by using generated data.  
+    $ node create_data.js     // To generate the random height, weight and [0,1], [1,0] data and store into bmi.json file.  
+    $ node learn_data.js      // To train and test the machine by using generated data.  
     ````  
        
   * App image  
